@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaider - Desarrollador y Dibujante Dígital</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <span class="nav-logo">Portafolio de Jaider Sanchez</span>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const links  = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('open');
+            links.classList.toggle('open');
+        });
+        // Cerrar menú al hacer click en un enlace
+        links.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                toggle.classList.remove('open');
+                links.classList.remove('open');
+            });
+        });
+    </script>
+    
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <p class="hero-label">Mi nombre es Jaider y soy...</p>
+                <h1 class="hero-title">Desarrollador de software y Dibujante Dígital</h1>
+                <p class="hero-label">Mi objetivo es crear obras que combinen la tecnología y creatividad.</p>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+                    <a href="#gallery" class="btn btn-secondary">Ver galería</a>
+                    <a href="#contact" class="btn btn-outline">Contacto</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="Assets/Img/Jaleczusona welcome plantilla.png" alt="Parodia visual de Jaider">
+            </div>
+        </section>
+        <br> <br>
+        <section id="about">
+            <div>
+                <h2>Sobre mí</h2>
+                <p class="section-line"></p>
+            </div>
+            
+            <div class = "about-content">
+                <div>
+                    <p>Soy un dibujante digital y estudiante de Ingeniería de Sistemas con 20 años de edad. 
+                    Me interesa tanto el dibujo digital como el desarrollo de software, con un enfoque especial en el diseño de interfaces. 
+                    Disfruto combinar la creatividad visual con soluciones tecnológicas, buscando crear experiencias atractivas y 
+                    funcionales para los usuarios. <br> <br> Mi objetivo es integrar mis habilidades en dibujo digital con el desarrollo de 
+                    software, aplicando los conocimientos adquiridos en mi formación académica y mis años de experiencia como dibujante digital amateur.</p>
+                    <br>
+                    <div class="about-stats">
+                        <div class="about-card">
+                            <h3>10</h3>
+                            <p>Proyectos universitarios<br> realizados.</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>7+</h3>
+                            <p>Años de experiencia <br> en dibujo digital.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                <img src="Assets/Img/Jaider Foto.png" alt="Foto de Jaider">
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+
+        <section id="projects">
+            <div class="projects-title">
+                <h2>Proyectos</h2>
+                <p class="section-line"></p>
+            </div>
+            <br>
+            <div class="projects-grid">
+                <!-- Tarjeta 1 -->
+                <div class="project-card">
+                    <img src="Assets/Img/Proyectos/variedades el chiqui.png" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Variedades El Chiquitín</h3>
+                        <p>Proyecto en grupo sobre un sitio web para una empresa local de variedades con la capacidad de hacer envíos ficticios a larga distancia.</p>
+                        <p>Mi participación fue:<br>Desarrollo frontend e indexación del PHP.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="https://drapps.co/expoingtech/variedades_chiquitin/frontend/" target="_blank" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 6 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 7 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 8 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 9 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 10 -->
+                <div class="project-card">
+                    <img src="Assets/Img/no disponible.jpg" alt="captura de pantalla de Variedades El Chiquitin">
+                    <div class="card-contend">
+                        <h3>Titulo de la tarjeta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vitae. Fugit ipsa voluptatum repellat laboriosam facere amet pariatur reiciendis soluta iure tenetur maxime, commodi excepturi modi, sunt cupiditate fugiat inventore?</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HMTL5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Boothstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <br>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver más</a>
+                            <a href="#projects" class="btn btn-outline">Ir al sitio web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+        
+        <section id="gallery">
+            <div class="gallery-title">
+                <h2>Galería</h2>
+                <p class="section-line"></p>
+                <p>Haz click en una tarjeta para ver más información de ella.</p>
+            </div>
+            <br>
+            <div class="gallery-grid">
+                <!-- Dibujo 1 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon mar13 day.png" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Happy Mar13 Day!!</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 2 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon FNAF 2 ALL.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Five Night's at Freddy's</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 3 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon Nina Cortex.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Bocetos de Nina Cortex</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 4 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon Zari and Lily.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Zari y Lily - Duolingo</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 5 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon Eliza vs Dio.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Eliza vs Dio brando</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 6 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon Coco & Crash Selfie.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Crash & Coco Selfie!</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 7 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon Angie y Megan Frosty Fest 2025.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Angie y Megan</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 8 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon Akira Toriyama tribute.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Tributo a Akira Toriyama</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 9 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon the shortstack miner.webp" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Conceptos de videojuegos</h3> 
+                        </div>
+                    </div>
+                </a>
+                <!-- Dibujo 10 -->
+                <a href="#gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-icon">
+                            <img src="Assets/Img/Dibujos/icon inktober.png" alt="captura de pantalla de Variedades El Chiquitin">
+                        </div>
+                        <div class="gallery-contend">
+                            <h3>Algunos dibujos extras</h3> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <br>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Información de contacto y redes sociales...</p>
+        </section>
+        <br>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Jaider Sanchez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
